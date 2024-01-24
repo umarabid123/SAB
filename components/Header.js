@@ -1,9 +1,9 @@
 const Header = () => {
   return (
-    <div className="m-0 p-0 box-border">
+    <div className="m-0 p-0 box-border max-w-[100%] overflow-hidden">
       <header>
-        <div className="bg-hero-pattern w-[100%] sm:w-[100%] h-[60vh] sm:h-[100vh] bg-no-repeat bg-cover bg-center">
-          <div className="bg-primary bg-cover w-[100%] h-[100vh]">
+        <div className="bg-hero-pattern w-[100%] sm:w-[100%] h-[60vh] sm:h-[100vh] overflow-hidden max-w-[100%] bg-no-repeat bg-cover bg-center">
+          <div className="bg-primary bg-cover w-[100%] h-[60vh] sm:h-[100vh]">
             <div className="nav bg-transparent h-[41px] xl:h-[68px] px-[17px] sm:px-[31px] lg:px-[40px] flex justify-between items-center">
               <div className="nav-item1 flex gap-4 lg:gap-10">
                 <svg
@@ -102,7 +102,7 @@ const Header = () => {
                 <div className="btn flex items-center gap-2">
                   <button className="bg-[#fff]  sm:w-[40%] lg:w-[30%] xl:w-[22%] h-[30px] sm:h-[40px] rounded-[4px] flex items-center gap-2 py-[6px] pr-[15px] pl-[12px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px]">
                     <svg
-                      width="24"
+                      width="15"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -110,7 +110,7 @@ const Header = () => {
                       class="ltr-4z3qvp e1svuwfo1"
                       data-name="Play"
                       aria-hidden="true"
-                      className=""
+                      className=" sm:w-24"
                     >
                       <path
                         d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
@@ -151,6 +151,20 @@ const Header = () => {
               
             </div>
           </div>
+        </div>
+        <div className="card-container bg-[#141414] h-[100vh]">
+        <div className="cards">
+                <div className="img-card flex gap-2  w-[100vw] ">
+                    <img src="/images/m-1.webp"  className="sm:w-[20%] rounded-[4px] w-[45%]" alt="" />
+                    <img src="/images/leo.webp"  className="sm:w-[20%] rounded-[4px] w-[45%]" alt="" />
+                    <img src="/images/wanted.webp" className="sm:w-[20%] rounded-[4px] w-[45%]"  alt="" />
+                    <img src="/images/extract.jpg" className="w-[20%] rounded-[4px]"  alt="" />
+                    <img src="/images/unbroken.webp" className="sm:w-[20%] rounded-[4px] w-[45%]"  alt="" />
+                    <img src="/images/lucky.webp" className="sm:w-[20%] rounded-[4px] w-[45%]"  alt="" />
+                    <img src="/images/extract2.jpg" className="sm:w-[20%] rounded-[4px] w-[45%]"  alt="" />
+                    <img src="/images/hanna.webp" className="sm:w-[20%] rounded-[4px] w-[45%]"  alt="" />
+                </div>
+              </div>
         </div>
       </header>
     </div>

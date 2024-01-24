@@ -13,3 +13,9 @@
     border-style: solid;
     border-width: 6px 6px 0;
 }
+.img-card{
+    overflow: scroll !important;
+}
+.img-card::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
