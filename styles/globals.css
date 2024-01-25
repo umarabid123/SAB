@@ -19,3 +19,6 @@
 .img-card::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+.all-num-card::-webkit-scrollbar{ 
+    display: none;  /* Safari and Chrome */
+}
