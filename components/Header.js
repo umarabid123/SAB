@@ -4,7 +4,7 @@ const Header = () => {
       <header>
         <div className="bg-hero-pattern w-[100%] sm:w-[100%] h-[60vh] sm:h-[100vh] overflow-hidden max-w-[100%] bg-no-repeat bg-cover bg-center">
           <div className="bg-primary bg-cover w-[100%] h-[60vh] sm:h-[100vh]">
-            <div className="nav bg-transparent h-[41px] xl:h-[68px] px-[17px] sm:px-[31px] lg:px-[40px] flex justify-between items-center">
+            <div className="nav bg-transparent h-[41px] xl:h-[68px] px-[17px] sm:px-[31px] lg:px-[40px] flex justify-between items-center fixed z-30 w-[100vw]">
               <div className="nav-item1 flex gap-4 lg:gap-10">
                 <svg
                   viewBox="0 0 111 30"
@@ -91,7 +91,7 @@ const Header = () => {
                 <div className="border-arrow hidden sm:block border-solid border-[1px] w-[10%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative top-[13%] sm:top-[20%]">
               <div className="text w-[36%] flex flex-col gap-2 sm:gap-6 absolute left-[4%] top-[50%]">
                 <img src="/images/text.webp" alt="" />
                 <p className=" text-[5px] sm:text-[10px] lg:text-[13px] xl:text-[16px] text-[#fff] font-[500]">
