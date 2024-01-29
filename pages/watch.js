@@ -12,6 +12,10 @@ const WatchPage = () => {
             <h2>watch page</h2>
             <h2>watch page</h2>
             <h2>watch page</h2>
+            <h2>watch page</h2>
+            <h2>watch page</h2>
+            <h2>watch page</h2>
+            <h2>watch page</h2>
 
         </div>
     )
