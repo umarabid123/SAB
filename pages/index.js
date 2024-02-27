@@ -5,86 +5,90 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-
-
 const inter = Inter({ subsets: ["latin"] });
 
 function HomePage() {
   const router = useRouter();
 
   return (
- <div className="overflow-hidden">
-      <Header/>
+    <div className="overflow-hidden">
+      <Header />
       <div className="card-container bg-[#141414] h-[200vh] pb-[50px]">
-        <div className="cards flex overflow-x-scroll">
-          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[1rem] sm:pl-[2rem] min-w-[25%]">
+        <div className="cards flex overflow-x-scroll z-20">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]">
             <div className=".img-s relative w-[100%]">
               <img
-               onClick={e => { router.push("/watch") }}
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
                 src="/images/hanna.webp"
-                className="w-[100%] rounded-[4px]"
+                className="w-[100%] rounded-[2px]"
               />
               <img
                 src="/images/icon-top10.png"
                 className="w-[10%] absolute top-0 right-0 "
               />
-              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
+              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-14 sm:left-20 text-center rounded-[4px] text-[8px] sm:text-[10px] lg:text-[10px] font-[700] w-[40%]">
                 Recently Added
               </p>
             </div>
             <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">             
-               <img
-                src="/images/liked.png"
-                className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-              />
-               <img
-                src="/images/plus.png"
-                className="w-[14%] rounded-full border-[#dbd0d0]"
-              />
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
                 <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div>
           </div>
-          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[1rem] sm:pl-[2rem] min-w-[25%]">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%]  max-w-[28%]">
             <div className=".img-s relative w-[100%]">
               <img
-               onClick={e => { router.push("/watch") }}
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
                 src="/images/leo.webp"
-                className="w-[100%] rounded-[4px]"
+                className="w-[100%] rounded-[2px]"
               />
               {/* <img
                 src="/images/icon-top10.png"
                 className="w-[10%] absolute top-0 right-0 "
               /> */}
-              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
+              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-16 sm:left-[80px] text-center rounded-[4px] text-[9px] sm:text-[10px] font-[700] w-[40%]">
                 Recently Added
               </p>
             </div>
             <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">             
-               <img
-                src="/images/liked.png"
-                className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-              />
-               <img
-                src="/images/plus.png"
-                className="w-[14%] rounded-full border-[#dbd0d0]"
-              />
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
                 <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div>
           </div>
-          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[1rem] sm:pl-[2rem] min-w-[25%]">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%]  lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]">
             <div className=".img-s relative w-[100%]">
               <img
-               onClick={e => { router.push("/watch") }}
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
                 src="/images/friend.webp"
-                className="w-[100%] rounded-[4px]"
+                className="w-[100%] rounded-[2px]"
               />
               <img
                 src="/images/Netflix_2015_N_logo.svg.png"
@@ -95,27 +99,29 @@ function HomePage() {
               </p> */}
             </div>
             <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">             
-               <img
-                src="/images/liked.png"
-                className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-              />
-               <img
-                src="/images/plus.png"
-                className="w-[14%] rounded-full border-[#dbd0d0]"
-              />
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
                 <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div>
           </div>
-          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[1rem] sm:pl-[2rem] min-w-[25%]">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[64x] sm:pl-[6px] min-w-[45%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%]  max-w-[28%]">
             <div className=".img-s relative w-[100%]">
               <img
-               onClick={e => { router.push("/watch") }}
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
                 src="/images/extract2.jpg"
-                className="w-[100%] rounded-[4px]"
+                className="w-[100%] rounded-[2px]"
               />
               {/* <img
                 src="/images/icon-top10.png"
@@ -126,27 +132,29 @@ function HomePage() {
               </p> */}
             </div>
             <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">             
-               <img
-                src="/images/liked.png"
-                className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-              />
-               <img
-                src="/images/plus.png"
-                className="w-[14%] rounded-full border-[#dbd0d0]"
-              />
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
                 <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div>
           </div>
-          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[1rem] sm:pl-[2rem] min-w-[25%]">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%]  max-w-[28%]">
             <div className=".img-s relative w-[100%]">
               <img
-               onClick={e => { router.push("/watch") }}
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
                 src="/images/lucky.webp"
-                className="w-[100%] rounded-[4px]"
+                className="w-[100%] rounded-[2px]"
               />
               {/* <img
                 src="/images/icon-top10.png"
@@ -157,27 +165,29 @@ function HomePage() {
               </p> */}
             </div>
             <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">             
-               <img
-                src="/images/liked.png"
-                className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-              />
-               <img
-                src="/images/plus.png"
-                className="w-[14%] rounded-full border-[#dbd0d0]"
-              />
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
                 <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div>
           </div>
-          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[1rem] sm:pl-[2rem] min-w-[25%]">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%]  lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]">
             <div className=".img-s relative w-[100%]">
               <img
-               onClick={e => { router.push("/watch") }}
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
                 src="/images/extract.jpg"
-                className="w-[100%] rounded-[4px]"
+                className="w-[100%] rounded-[2px]"
               />
               {/* <img
                 src="/images/icon-top10.png"
@@ -188,15 +198,15 @@ function HomePage() {
               </p> */}
             </div>
             <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">             
-               <img
-                src="/images/liked.png"
-                className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-              />
-               <img
-                src="/images/plus.png"
-                className="w-[14%] rounded-full border-[#dbd0d0]"
-              />
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
                 <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
@@ -225,19 +235,19 @@ function HomePage() {
                 ></path>
               </svg>
               <div className=".svg-card-img relative hover:scale-125">
-              <img
-                src="/images/pak-card-2.jpg"
-                alt=""
-                className="h-[60%] lg:h-[48%] xl:h-[54%] relative"
+                <img
+                  src="/images/pak-card-2.jpg"
+                  alt=""
+                  className="h-[60%] lg:h-[48%] xl:h-[54%] relative"
                 />
                 <img
-                src="/images/icon-top10.png"
-                className="w-[20%] absolute top-0 right-0 "
-              />
-              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-[165px] left-4 text-center rounded-[4px] text-[10px] font-[700] w-[74%]">
-                Recently Added
-              </p>
-                </div>
+                  src="/images/icon-top10.png"
+                  className="w-[20%] absolute top-0 right-0 "
+                />
+                <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-[165px] left-4 text-center rounded-[4px] text-[10px] font-[700] w-[74%]">
+                  Recently Added
+                </p>
+              </div>
             </div>
             <div className="c-svg-1 flex min-w-[45%] sm:min-w-[30%] xl:min-w-[19%]">
               <svg
@@ -614,52 +624,208 @@ function HomePage() {
             </div>
           </div>
         </div>
-        <div className="cards mt-[40px] sm:ml-[2rem]">
-          <p className="text-[16px] mb-[10px] text-[#fff] font-[700] my-[0.4%] mx-[1.2rem] inline-block">
-            My List
-          </p>
-          <div className="img-card flex gap-2  w-[100vw] pl-[1.2rem]">
-            <img
-              src="/images/m-1.webp"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
-            <img
-              src="/images/leo.webp"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
-            <img
-              src="/images/wanted.webp"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
-            <img
-              src="/images/extract.jpg"
-              className="w-[20%] rounded-[4px]"
-              alt=""
-            />
-            <img
-              src="/images/unbroken.webp"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
-            <img
-              src="/images/lucky.webp"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
-            <img
-              src="/images/extract2.jpg"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
-            <img
-              src="/images/hanna.webp"
-              className="sm:w-[20%] rounded-[4px] w-[45%]"
-              alt=""
-            />
+        <div className="card-all">
+          
+        <div className="cards flex overflow-x-scroll pt-[80px] z-20">
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]">
+            <div className=".img-s relative w-[100%]">
+              <img
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
+                src="/images/hanna.webp"
+                className="w-[100%] rounded-[2px]"
+              />
+              <img
+                src="/images/icon-top10.png"
+                className="w-[10%] absolute top-0 right-0 "
+              />
+              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-14 sm:left-20 text-center rounded-[4px] text-[8px] sm:text-[10px] lg:text-[10px] font-[700] w-[40%]">
+                Recently Added
+              </p>
+            </div>
+            <div className="card-txt hidden img-hover:block items-center justify-between">
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
+              </div>
+              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
+                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+              </div>
+            </div>
           </div>
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%]  max-w-[28%]">
+            <div className=".img-s relative w-[100%]">
+              <img
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
+                src="/images/leo.webp"
+                className="w-[100%] rounded-[2px]"
+              />
+              {/* <img
+                src="/images/icon-top10.png"
+                className="w-[10%] absolute top-0 right-0 "
+              /> */}
+              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-16 sm:left-[80px] text-center rounded-[4px] text-[9px] sm:text-[10px] font-[700] w-[40%]">
+                Recently Added
+              </p>
+            </div>
+            <div className="card-txt hidden img-hover:block items-center justify-between">
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
+              </div>
+              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
+                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+              </div>
+            </div>
+          </div>
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%]  lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]">
+            <div className=".img-s relative w-[100%]">
+              <img
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
+                src="/images/friend.webp"
+                className="w-[100%] rounded-[2px]"
+              />
+              <img
+                src="/images/Netflix_2015_N_logo.svg.png"
+                className="w-[5%] absolute top-2 left-4 "
+              />
+              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
+                Recently Added
+              </p> */}
+            </div>
+            <div className="card-txt hidden img-hover:block items-center justify-between">
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
+              </div>
+              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
+                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+              </div>
+            </div>
+          </div>
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[64x] sm:pl-[6px] min-w-[45%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%]  max-w-[28%]">
+            <div className=".img-s relative w-[100%]">
+              <img
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
+                src="/images/extract2.jpg"
+                className="w-[100%] rounded-[2px]"
+              />
+              {/* <img
+                src="/images/icon-top10.png"
+                className="w-[10%] absolute top-0 right-0 "
+              /> */}
+              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
+                Recently Added
+              </p> */}
+            </div>
+            <div className="card-txt hidden img-hover:block items-center justify-between">
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
+              </div>
+              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
+                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+              </div>
+            </div>
+          </div>
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%]  max-w-[28%]">
+            <div className=".img-s relative w-[100%]">
+              <img
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
+                src="/images/lucky.webp"
+                className="w-[100%] rounded-[2px]"
+              />
+              {/* <img
+                src="/images/icon-top10.png"
+                className="w-[10%] absolute top-0 right-0 "
+              /> */}
+              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
+                Recently Added
+              </p> */}
+            </div>
+            <div className="card-txt hidden img-hover:block items-center justify-between">
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
+              </div>
+              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
+                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+              </div>
+            </div>
+          </div>
+          <div className="img hover:transition-all z-auto hover:delay-500 hover:duration-300 ease-in-out hover:scale-150 pl-[4px] sm:pl-[6px] min-w-[45%] sm:min-w-[33%]  lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]">
+            <div className=".img-s relative w-[100%]">
+              <img
+                onClick={(e) => {
+                  router.push("/watch");
+                }}
+                src="/images/extract.jpg"
+                className="w-[100%] rounded-[2px]"
+              />
+              {/* <img
+                src="/images/icon-top10.png"
+                className="w-[10%] absolute top-0 right-0 "
+              /> */}
+              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
+                Recently Added
+              </p> */}
+            </div>
+            <div className="card-txt hidden img-hover:block items-center justify-between">
+              <div className="img-logo flex items-center gap-2">
+                <img
+                  src="/images/liked.png"
+                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
+                />
+                <img
+                  src="/images/plus.png"
+                  className="w-[14%] rounded-full border-[#dbd0d0]"
+                />
+              </div>
+              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
+                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
       <Footer />
