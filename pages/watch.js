@@ -12,8 +12,8 @@ const WatchPage = () => {
 <source src="/images/video.mp4"></source>
           </video>
              <img src="/images/Netflix_2015_N_logo.svg.png" className="absolute top-12 left-64 w-[30px]"></img>
-             
         </div>
+        
     )
 }
 
