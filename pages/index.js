@@ -62,6 +62,19 @@ icon:"/images/icon-top10.png"
 
 // }
 ]
+
+const dataMovies = [
+  {
+    images:"/images/pk.webp" ,
+    // icon:"/images/icon-top10.png"
+
+},
+{
+images:"/images/friend.webp" ,
+// icon:"/images/icon-top10.png"
+
+},
+]
   return (
     <div className="overflow-x-hidden">
       <Header />
@@ -365,72 +378,7 @@ icon:"/images/icon-top10.png"
             Continue watching for 5
           </p>
           <div className="cards flex overflow- ">
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + 'https://www.youtube.com/embed/SOXWc32k4zA?si=0kgBqDKWm7NYH_tW');
-                }}
-                src="/images/pk.webp"
-                className="w-[100%] rounded-[2px] group-hover:z-60"
-              />
-              <img
-                src="/images/Netflix_2015_N_logo.svg.png"
-                className="w-[5%] absolute top-2 left-4 "
-              />
-              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
-                Recently Added
-              </p> */}
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + 'https://www.youtube.com/embed/VvKlM51Rgeo?si=mQiG_yXNUxFh7Xsv');
-                }}
-                src="/images/friend.webp"
-                className="w-[100%] rounded-[2px] group-hover:z-60"
-              />
-              <img
-                src="/images/Netflix_2015_N_logo.svg.png"
-                className="w-[5%] absolute top-2 left-4 "
-              />
-              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
-                Recently Added
-              </p> */}
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
+          {dataMovies.map((item, index) => <Card {...{item}} />)}
         </div>
         </div>
        <div className=" all-card-num-heading">
@@ -700,202 +648,8 @@ icon:"/images/icon-top10.png"
             Top 10 Movies in Pakistan Today
           </p>
           <div className="cards flex overflow- ">
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + `https://www.youtube.com/embed/u73CLdHpbNk?si=j4J_Dh8za2iOm2R3`);
-                }}
-                src="/images/hanna.webp"
-                className="w-[100%] rounded-[2px]"
-              />
-              <img
-                src="/images/icon-top10.png"
-                className="w-[10%] absolute top-0 right-0 "
-              />
-              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-14 sm:left-20 text-center rounded-[4px] text-[8px] sm:text-[10px] lg:text-[10px] font-[700] w-[40%]">
-                Recently Added
-              </p>
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={e => { router.push(src + 'https://www.youtube.com/embed/qN3wfuPYTI4?si=OOEC-ryhVup9HCgm') }}
-                src="/images/leo.webp"
-                className="w-fit rounded-[2px] group-hover:h-[140px] group-hover:z-50"
-              />
-              {/* <img
-                src="/images/icon-top10.png"
-                className="w-[10%] absolute top-0 right-0 "
-              /> */}
-              <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-16 sm:left-[80px] text-center rounded-[4px] text-[9px] sm:text-[10px] font-[700] w-[40%]">
-                Recently Added
-              </p>
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + 'https://www.youtube.com/embed/VvKlM51Rgeo?si=mQiG_yXNUxFh7Xsv');
-                }}
-                src="/images/friend.webp"
-                className="w-[100%] rounded-[2px] group-hover:z-60"
-              />
-              <img
-                src="/images/Netflix_2015_N_logo.svg.png"
-                className="w-[5%] absolute top-2 left-4 "
-              />
-              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
-                Recently Added
-              </p> */}
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + `https://www.youtube.com/embed/L6P3nI6VnlY?si=qJ1QDuHZ_qexFQCF`);
-                }}
-                src="/images/extract2.jpg"
-                className="w-[100%] rounded-[2px]"
-              />
-              {/* <img
-                src="/images/icon-top10.png"
-                className="w-[10%] absolute top-0 right-0 "
-              /> */}
-              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
-                Recently Added
-              </p> */}
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + `https://www.youtube.com/embed/bN7ksFEVO9U?si=8C4P60j_1DNmaXZf`);
-                }}
-                src="/images/lucky.webp"
-                className="w-[100%] rounded-[2px]"
-              />
-              {/* <img
-                src="/images/icon-top10.png"
-                className="w-[10%] absolute top-0 right-0 "
-              /> */}
-              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
-                Recently Added
-              </p> */}
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
-          <div className={customClass+" pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
-            <div className=".img-s relative w-[100%]">
-              <img
-                onClick={(e) => {
-                  router.push(src + `https://www.youtube.com/embed/Do4AeWg0uV0?si=6oXzrFZ1EaHxaMai`);
-                }}
-                src="/images/extract.jpg"
-                className="w-[100%] rounded-[2px]"
-              />
-              {/* <img
-                src="/images/icon-top10.png"
-                className="w-[10%] absolute top-0 right-0 "
-              /> */}
-              {/* <p className="text-[#fff] bg-red-600 inline-block p-[2px] absolute bottom-0 left-24 text-center rounded-[4px] text-[12px] font-[700] w-[40%]">
-                Recently Added
-              </p> */}
-            </div>
-            <div className="card-txt hidden img-hover:block items-center justify-between">
-              <div className="img-logo flex items-center gap-2">
-                <img
-                  src="/images/liked.png"
-                  className="w-[12%] border-[1px] rounded-full p-[8px] border-[#dbd0d0]"
-                />
-                <img
-                  src="/images/plus.png"
-                  className="w-[14%] rounded-full border-[#dbd0d0]"
-                />
-              </div>
-              <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow hidden sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
-              </div>
-            </div>
-          </div>
+          {data.map((item, index) => <Card {...{item}} />)}
+        
         </div>
         </div>
       </div>
