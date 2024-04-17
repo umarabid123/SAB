@@ -6,8 +6,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useState } from "react";
 import Card from "@/components/Cards";
+import Text from "@/components/CardText";
 const inter = Inter({ subsets: ["latin"] });
-
 function HomePage() {
   const [showData, setshowData] = useState(false)
   const router = useRouter();
@@ -39,7 +39,6 @@ icon:"/images/icon-top10.png"
 {
 images:"/images/lucky.webp" ,
 icon:"/images/icon-top10.png"
-
 },
 // {
 // images:"/images/leo.webp" ,
@@ -75,12 +74,33 @@ images:"/images/friend.webp" ,
 
 },
 ]
+const cardText = [
+  {
+    icon1:"/images/liked.png",
+    icon2:"/images/plus.png"
+  },
+  {
+    icon1:"/images/liked.png",
+    icon2:"/images/plus.png"
+  },
+  {
+    icon1:"/images/liked.png",
+    icon2:"/images/plus.png"
+  },
+  {
+    icon1:"/images/liked.png",
+    icon2:"/images/plus.png"
+  },
+  {
+    icon1:"/images/liked.png",
+    icon2:"/images/plus.png"
+  },
+]
   return (
-    <div className="overflow-x-hidden">
+    <div className="">
       <Header />
-      
       <div className="card-container bg-[#141414] h-[200vh] pb-[50px]">
-        <div className="cards flex overflow- ">
+        <div className="cards flex">
           {/* <div className={customClass + " pl-[16px] sm:pl-[16px] min-w-[47%] sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%]"}>
             <div className=".img-s relative w-[100%]" >
               <img
@@ -115,7 +135,9 @@ images:"/images/friend.webp" ,
             </div>
           </div> */}
           {data.map((item, index) => <Card {...{item}} />)}
-          
+          {/* {cardText.map((itemt, index) => <Text {...{itemt}} />)} */}
+        
+         
         </div>
         <div className="pak-movies my-[3vw] h-[22%] sm:w-[40%]">
           <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
