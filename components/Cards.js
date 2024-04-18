@@ -16,7 +16,7 @@ const Card = ({ item }) => {
       <div
          onMouseEnter={handleMouseEnter}
          onMouseLeave={handleMouseLeave} className={
-          " pl-[16px] flex flex-col sm:pl-[16px] min-w-[47%] overflow-x-hidden sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%] transition-all  hover:z-50 duration-500 ease-in-out hover:scale-125 group relative"
+          " pl-[16px] flex flex-col sm:pl-[16px] min-w-[47%] overflow-x-hidden sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%] transition-all  hover:z-50 duration-500 ease-in-out hover:scale-125 group relative box-border p-0 m-0"
         }
       >
         <div className=".img-s relative w-[100%]">
@@ -47,8 +47,8 @@ const Card = ({ item }) => {
                 <div class="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div> */}
-        { isHovered && (<div className="all h-20 z-[9999px]  bg-[#141414] rounded-xl transition-all duration-500">
-          <div className=" flex justify-between items-start py-2">
+        { isHovered && (<div className="all h-36 z-[9999px]  bg-[#141414] rounded-xl transition-all duration-500 px-2">
+          <div className=" flex justify-between items-start py-2 transition-all duration-500 delay-500">
             <div className="img-logo flex items-center gap-2">
               <img
                 src="/images/liked.png"
@@ -59,11 +59,19 @@ const Card = ({ item }) => {
                 className="w-[14%] rounded-full border-[#dbd0d0]"
               />
             </div>
-            <div className="border-[1px] w-[18.5%] h-[38px] flex justify-center items-center rounded-full">
+            <div className="border-[1px] w-[18.5%] h-[34px] flex justify-center items-center rounded-full">
               <div class="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#000] rounded-full hover:cursor-pointer"></div>
             </div>
           </div>
-          
+            <div className="bottom-txt flex items-center gap-3">
+              <p className="text-[16px] font-medium text-green-500">New</p>
+              <p className="border-[1px] border-gray-500 text-gray-500 px-1 py-0">7 +</p>
+              <p className="text-gray-400">1h 36m</p>
+              <p className="border-[1px] border-gray-500 text-gray-500 px-1 py-0 rounded-md">HD</p>
+            </div>
+          <div className="bottom-txt-2 ">
+            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
+          </div>
         </div>)}
       </div>
       {/* </div> */}
