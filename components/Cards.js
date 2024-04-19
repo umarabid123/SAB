@@ -1,6 +1,7 @@
 import { useState } from "react";
 const Card = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false)
+  const [Open, setOpen] = useState(false)
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -60,7 +61,7 @@ const Card = ({ item }) => {
               />
             </div>
             <div className=" w-[18.5%] h-[50px] flex justify-center items-center rounded-full">
-            <img src="/images/downarrow.png" alt="" />
+            <img src="/images/downarrow.png" alt="" onClick={()=>setOpen(!Open)}/>
             </div>
           </div>
             <div className="bottom-txt flex items-center gap-3">
@@ -72,7 +73,12 @@ const Card = ({ item }) => {
           <div className="bottom-txt-2 ">
             <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
           </div>
+         
         </div>)}
+        {Open && <div className="bottom-txt-3 bg-red-700 absolute h-full w-full z-50">
+            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
+            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
+          </div>}
       </div>
       {/* </div> */}
     </>

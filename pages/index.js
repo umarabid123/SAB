@@ -5,9 +5,9 @@ import SvgCard from "@/components/SvgCard";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-
 function HomePage() {
   const [showData, setshowData] = useState(false)
+const [Open, setOpen] = useState(false)
   const router = useRouter();
   let src = 'watchid?src='
   const customClass = " transition-all  hover:z-50 duration-300 ease-in-out hover:scale-150"
@@ -258,6 +258,10 @@ function HomePage() {
   return (
     <div className="overflow-hidden">
       <Header />
+      {Open && <div  className="bottom-txt-3 bg-red-700 absolute h-[100vh] w-full z-50">
+            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
+            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
+          </div>}
       <div className="card-container bg-[#141414] h-[200vh] pl-[17px] sm:pl-30px lg:pl-[40px] xl:pl-[57px] pb-[50px] relative">
         <div className="cards flex gap-x-2">
 
@@ -280,8 +284,11 @@ function HomePage() {
           </p>
           <div className="cards flex gap-x-2">
             {dataMovies.map((item, index) => <Card item={item} key={Math.random()}  />)}
+           
           </div>
+         
         </div>
+       
         <div className=" all-card-num-heading">
           {/* <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
             Top 10 Movies in Pakistan Today
