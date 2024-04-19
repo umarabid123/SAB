@@ -16,7 +16,7 @@ const Card = ({ item }) => {
       <div
          onMouseEnter={handleMouseEnter}
          onMouseLeave={handleMouseLeave} className={
-          " pl-[16px] flex flex-col sm:pl-[16px] min-w-[47%] overflow-x-hidden sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%] transition-all  hover:z-50 duration-500 ease-in-out hover:scale-125 group relative box-border p-0 m-0"
+          " flex flex-col min-w-[47%] overflow-x-hidden sm:min-w-[33%] lg:min-w-[23%] xl:min-w-[19%] max-w-[28%] transition-all  hover:z-50 duration-500 ease-in-out hover:scale-125 group relative box-border p-0 m-0"
         }
       >
         <div className=".img-s relative w-[100%]">
@@ -59,8 +59,8 @@ const Card = ({ item }) => {
                 className="w-[14%] rounded-full border-[#dbd0d0]"
               />
             </div>
-            <div className="border-[1px] w-[18.5%] h-[34px] flex justify-center items-center rounded-full">
-              <div className="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#000] rounded-full hover:cursor-pointer"></div>
+            <div className=" w-[18.5%] h-[50px] flex justify-center items-center rounded-full">
+            <img src="/images/downarrow.png" alt="" />
             </div>
           </div>
             <div className="bottom-txt flex items-center gap-3">

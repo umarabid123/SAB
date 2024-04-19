@@ -258,8 +258,8 @@ function HomePage() {
   return (
     <div className="overflow-hidden">
       <Header />
-      <div className="card-container bg-[#141414] h-[200vh] pb-[50px]">
-        <div className="cards flex">
+      <div className="card-container bg-[#141414] h-[200vh] pl-[17px] sm:pl-30px lg:pl-[40px] xl:pl-[57px] pb-[50px] relative">
+        <div className="cards flex gap-x-2">
 
           {data.map((item, index) => <Card item={item} key={Math.random()} />)}
 
@@ -267,18 +267,18 @@ function HomePage() {
 
         </div>
         <div className="pak-movies my-[3vw] h-[22%] sm:w-[40%]">
-          <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] ml-[3rem]">
+          <p className="text-[19px] text-[#fff] font-[700] my-[3%]">
             Top 10 Movies in Pakistan Today
           </p>
-          <div className="all-num-card flex gap-4 pl-[4%] mt-[10px] w-[100vw]">
+          <div className="all-num-card flex gap-4 mt-[10px] w-[100vw]">
             {svgCard.map((items, index) => <SvgCard items={items} key={Math.random()}  />)}
           </div>
         </div>
         <div className="continuesly-watch mt-[40px]">
-          <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[1.2rem] ml-[3rem] inline-block">
+          <p className="text-[19px] text-[#fff] font-[700] my-[1%] inline-block">
             Continue watching for 5
           </p>
-          <div className="cards flex overflow- ">
+          <div className="cards flex gap-x-2">
             {dataMovies.map((item, index) => <Card item={item} key={Math.random()}  />)}
           </div>
         </div>
@@ -286,21 +286,21 @@ function HomePage() {
           {/* <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
             Top 10 Movies in Pakistan Today
           </p> */}
-          <div className="pak-movies my-[0px] h-[22%] sm:w-[40%]">
-            <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
+          <div className="pak-movies h-[22%] sm:w-[40%] my-[3vh]">
+            <p className="text-[19px] text-[#fff] mb-[10px] font-[700] my-[3%] inline-block">
               Top 10 Movies in Pakistan Today
             </p>
-            <div className="all-num-card flex gap-x-4 pl-[4%] mt-[10px] w-[100vw]">
+            <div className="all-num-card flex gap-x-4 mt-[10px] w-[100vw]">
               {svgCard.map((items, index) => <SvgCard items={items} key={Math.random()}  />)}
             </div>
           </div>
         </div>
 
         <div className="card-all">
-          <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
+          <p className="text-[19px] text-[#fff] mb-[10px] font-[700] my-[1%] inline-block">
             Top 10 Movies in Pakistan Today
           </p>
-          <div className="cards flex overflow- ">
+          <div className="cards flex gap-x-2 overflow- ">
             {data.map((item, index) => <Card item={item} key={Math.random()}  />)}
 
           </div>
