@@ -44,7 +44,7 @@ const Card = ({ item }) => {
                 />
               </div>
               <div className="border-[1px] w-[23%] h-[34px] flex justify-center items-center rounded-full">
-                <div class="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
+                <div className="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#fff] rounded-full hover:cursor-pointer"></div>
               </div>
             </div> */}
         { isHovered && (<div className="all h-36 z-[9999px]  bg-[#141414] rounded-xl transition-all duration-500 px-2">
@@ -60,7 +60,7 @@ const Card = ({ item }) => {
               />
             </div>
             <div className="border-[1px] w-[18.5%] h-[34px] flex justify-center items-center rounded-full">
-              <div class="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#000] rounded-full hover:cursor-pointer"></div>
+              <div className="border-arrow sm:block border-solid border-[1px] w-[1%] border-[#000] rounded-full hover:cursor-pointer"></div>
             </div>
           </div>
             <div className="bottom-txt flex items-center gap-3">
