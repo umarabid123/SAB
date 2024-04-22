@@ -1,7 +1,7 @@
 import { useState } from "react";
-const Card = ({ item }) => {
+const Card = ({ item, setOpen,Open }) => {
   const [isHovered, setIsHovered] = useState(false)
-  const [Open, setOpen] = useState(false)
+ 
   const handleMouseEnter = () => {
     setIsHovered(true);
   };
@@ -73,12 +73,9 @@ const Card = ({ item }) => {
           <div className="bottom-txt-2 ">
             <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
           </div>
-         
+          
         </div>)}
-        {Open && <div className="bottom-txt-3 bg-red-700 absolute h-full w-full z-50">
-            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
-            <span className="text-white">Explosive </span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Violent</span> <span className="hr w-[4px] text-[30px] text-gray-500">.</span> <span className="text-white">Action Thriller</span> 
-          </div>}
+        
       </div>
       {/* </div> */}
     </>
