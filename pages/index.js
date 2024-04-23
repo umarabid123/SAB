@@ -271,14 +271,15 @@ function HomePage() {
     <div className="overflow-hidden">
       <Header />
       {Open && (
-        <div className="bottom-txt-3 absolute h-[100vh] w-full flex flex-col items-center ">
-          <div className="bg-red-400 w-full absolute h-full opacity-80 z-10" />
+        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center">
+          <div className="bg-red-400 w-full absolute h-[200vh] opacity-80 z-10 " />
 
-          <div className="flex justify-center items-center relative w-[50%] ">
+          <div className="flex justify-center items-center relative w-[55%] ">
+            
             <img
               src="/images/cross.png"
               alt=""
-              className="bg-white z-50 absolute right-0"
+              className=" z-50 absolute right-3 top-3 w-[5%]"
               onClick={() => setOpen(!Open)}
             />
             <PopUp />
