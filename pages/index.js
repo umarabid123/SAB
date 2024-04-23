@@ -268,13 +268,13 @@ function HomePage() {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden relative">
       <Header />
       {Open && (
-        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center">
-          <div className="bg-red-400 w-full absolute h-[200vh] opacity-80 z-10 " />
+        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center -top-32">
+          <div className="bg-black w-full absolute h-[500vh] opacity-80 z-40 " />
 
-          <div className="flex justify-center items-center relative w-[55%] ">
+          <div className="flex justify-center items-center relative w-[63%] mt-[50px]">
             
             <img
               src="/images/cross.png"

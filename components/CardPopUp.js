@@ -1,9 +1,51 @@
+import CardPopup from "./MiniCardsPopUp";
+
 const PopUp = (Pop) => {
+  const POPUPDATA = [
+    {
+      imgs: "/images/extract.jpg",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/leo.webp",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/extract2.jpg",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/extract.jpg",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/lucky.webp",
+      popupIcon: "/images/icon-top10.png",
+    },
+    ,
+    {
+      imgs: "/images/leo.webp",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/extract2.jpg",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/extract.jpg",
+      popupIcon: "/images/icon-top10.png",
+    },
+    {
+      imgs: "/images/lucky.webp",
+      popupIcon: "/images/icon-top10.png",
+    },
+  ];
+
   return (
     <>
-      <div className="flex flex-col z-40 w-[100%] h-[100%] ">
-        <div className=".img-s relative w-[100%] z-40 bg-[url('/images/popup-img.webp')] h-[160vh] bg-cover bg-center rounded-t-xl">
-          <div className="icon-btn absolute top-2/4 left-14 flex justify-between items-end">
+      <div className="flex flex-col z-40 w-[100%] h-[100%]">
+        <div className=".img-s relative w-[100%] z-40 bg-[url('/images/popup-img.webp')] h-[90vh] bg-cover bg-center rounded-t-xl">
+          <div className="icon-btn absolute top-2/4 left-14 flex justify-between items-end w-[85%]">
             <div className="logo">
               <img
                 src="/images/popup-img2.webp"
@@ -108,70 +150,139 @@ const PopUp = (Pop) => {
               />
             </div> */}
           {/* </div> */}
-          <div className="text-item-1 w-[75%]">
-            <div className="text-m my-[.8rem]">
-              <div className="bottom-txt flex items-center gap-3 ">
-                <p className="text-[16px] font-medium text-green-500">New</p>
-                <p className="text-gray-400">2023</p>
-                <p className="text-gray-400">1h 36m</p>
+          <div className="txt-all flex mt-10">
+            <div className="text-item-1 w-[65%]">
+              <div className="text-m my-[.8rem]">
+                <div className="bottom-txt flex items-center gap-3">
+                  <p className="text-[16px] font-medium text-green-500">New</p>
+                  <p className="text-gray-400">2023</p>
+                  <p className="text-gray-400">1h 36m</p>
 
-                <p className="border-[1px] border-gray-500 text-gray-500 px-1 py-0 rounded-md">
-                  HD
-                </p>
+                  <p className="border-[1px] border-gray-500 text-gray-500 px-1 py-0 rounded-md">
+                    HD
+                  </p>
+                </div>
+                <div className="txt flex gap-3 ">
+                  <p className="border-[1px] border-gray-500 text-white px-2 py-0 mb-[.8rem]">
+                    16+
+                  </p>
+                  <span className="text-gray-100">Violent, mature themes</span>
+                </div>
               </div>
-              <div className="txt flex gap-3 ">
-                <p className="border-[1px] border-gray-500 text-white px-2 py-0 mb-[8px]">
-                  16+
-                </p>
-                <span className="text-gray-100">Violent, mature themes</span>
+              <div className="bottom-txt-2 flex ">
+                <img
+                  src="/images/icon-top10.png"
+                  className="w-[6%] rounded-[3px] mr-2 mb-[.5rem]"
+                />
+                <h5 className="text-white text-[20px] font-bold">
+                  #2 in Movies Today
+                </h5>
+              </div>
+              <div className="bottom-txt-3 text-[14px] text-white font-bold my-[.5rem]">
+                Ahead of a major constitutional decision, special agent Zooni
+                Haksar is tasked with a secret mission to quell violence in a
+                conflict-ridden region.
               </div>
             </div>
-            <div className="bottom-txt-2 flex ">
-              <img
-                src="/images/icon-top10.png"
-                className="w-[6%] rounded-[3px] mr-2 mb-[.5rem]"
-              />
-              <h5 className="text-white text-[20px] font-bold">
-                #2 in Movies Today
-              </h5>
-            </div>
-            <div className="bottom-txt-3 text-[14px] text-white font-bold my-[.5rem]">
-              Ahead of a major constitutional decision, special agent Zooni
-              Haksar is tasked with a secret mission to quell violence in a
-              conflict-ridden region.
+            <div className="text-item-2 w-[35%]">
+              <div className="my-[.8rem] ml-[.6rem]">
+                <span className="text-gray-400">Cast:</span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/30170941"
+                    historystate="[object Object]"
+                  >
+                    {" "}
+                    Yami Gautam,{" "}
+                  </a>
+                </span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/30075236"
+                    historystate="[object Object]"
+                  >
+                    Priyamani,{" "}
+                  </a>
+                </span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/40171870"
+                    historystate="[object Object]"
+                  >
+                    Vaibhav Tatwawaadi,{" "}
+                  </a>
+                </span>
+                <span class="tag-more text-white" data-uia="tag-more">
+                  <a href="#about">more</a>
+                </span>
+              </div>
+              <div className="my-[.8rem] ml-[.6rem]">
+                <span className="text-gray-400">Genres:</span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/30170941"
+                    historystate="[object Object]"
+                  >
+                    {" "}
+                    Yami Gautam,{" "}
+                  </a>
+                </span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/30075236"
+                    historystate="[object Object]"
+                  >
+                    Priyamani,{" "}
+                  </a>
+                </span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/40171870"
+                    historystate="[object Object]"
+                  >
+                    Vaibhav Tatwawaadi,{" "}
+                  </a>
+                </span>
+                <span class="tag-more text-white" data-uia="tag-more">
+                  <a href="#about">more</a>
+                </span>
+              </div>
+              <div className="my-[.8rem] ml-[.6rem]">
+                <span className="text-gray-400">This movie is:</span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/30170941"
+                    historystate="[object Object]"
+                  >
+                    {" "}
+                    Yami Gautam,{" "}
+                  </a>
+                </span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/30075236"
+                    historystate="[object Object]"
+                  >
+                    Priyamani,{" "}
+                  </a>
+                </span>
+                <span class="tag-item text-white" data-uia="tag-item">
+                  <a
+                    href="/browse/m/person/40171870"
+                    historystate="[object Object]"
+                  >
+                    Vaibhav Tatwawaadi,{" "}
+                  </a>
+                </span>
+                <span class="tag-more text-white" data-uia="tag-more">
+                  <a href="#about">more</a>
+                </span>
+              </div>
             </div>
           </div>
-          <div class="previewModal--tags" data-uia="previewModal--tags-person">
-            <span className="text-gray-400">Cast:</span>
-            <span class="tag-item text-white" data-uia="tag-item">
-              <a
-                href="/browse/m/person/30170941"
-                historystate="[object Object]"
-              >
-                {" "}
-                Yami Gautam,{" "}
-              </a>
-            </span>
-            <span class="tag-item text-white" data-uia="tag-item">
-              <a
-                href="/browse/m/person/30075236"
-                historystate="[object Object]"
-              >
-                Priyamani,{" "}
-              </a>
-            </span>
-            <span class="tag-item text-white" data-uia="tag-item">
-              <a
-                href="/browse/m/person/40171870"
-                historystate="[object Object]"
-              >
-                Vaibhav Tatwawaadi,{" "}
-              </a>
-            </span>
-            <span class="tag-more text-white" data-uia="tag-more">
-              <a href="#about">more</a>
-            </span>
-          </div>
+         <div className="popupcards flex flex-wrap gap-4">
+         {POPUPDATA.map((popup, index) =>(<CardPopup popup ={popup} key={Math.random()} />) )}
+         </div>
         </div>
       </div>
     </>
