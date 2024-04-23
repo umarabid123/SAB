@@ -271,7 +271,7 @@ function HomePage() {
     <div className="overflow-hidden relative">
       <Header />
       {Open && (
-        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center -top-32">
+        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center -top-20">
           <div className="bg-black w-full absolute h-[500vh] opacity-80 z-40 " />
 
           <div className="flex justify-center items-center relative w-[63%] mt-[50px]">
@@ -340,7 +340,7 @@ function HomePage() {
           </p>
           <div className="cards flex gap-x-2 overflow- ">
             {data.map((item, index) => (
-              <Card item={item} key={Math.random()} />
+              <Card item={item} key={Math.random()} Open={Open} setOpen={setOpen} />
             ))}
           </div>
         </div>

@@ -150,7 +150,7 @@ const PopUp = (Pop) => {
               />
             </div> */}
           {/* </div> */}
-          <div className="txt-all flex mt-10">
+          <div className="txt-all flex gap-2 mt-10">
             <div className="text-item-1 w-[65%]">
               <div className="text-m my-[.8rem]">
                 <div className="bottom-txt flex items-center gap-3">
@@ -280,8 +280,11 @@ const PopUp = (Pop) => {
               </div>
             </div>
           </div>
+         <div className="">
+         <h3 class="text-[24px] font-bold mt-12 mb-5 text-white">More Like This</h3>
          <div className="popupcards flex flex-wrap gap-4">
          {POPUPDATA.map((popup, index) =>(<CardPopup popup ={popup} key={Math.random()} />) )}
+         </div>
          </div>
         </div>
       </div>
