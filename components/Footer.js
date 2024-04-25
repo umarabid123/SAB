@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer bg-[#141414] px-[4%] ">
-                <div className="logo flex gap-6 items-center pt-[80px]">
+                <div className="logo flex gap-6 items-center sm:pt-[80px]">
                     <svg
                         width="24"
                         height="24"

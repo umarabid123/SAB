@@ -1,3 +1,5 @@
+
+
 const CardPopup = ({popup}) =>{
     return(
         <>
@@ -61,6 +63,7 @@ const CardPopup = ({popup}) =>{
             </div>
           <div class="text-gray-300 px-[14px] pb-[14px] text-[15px]">From the Emmy-winning creators of “Game of Thrones” comes this sci-fi mystery series based on the bestselling books about an epic quest to save humanity.</div>
         </div>
+      
         
       </div>
         </>

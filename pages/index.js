@@ -271,15 +271,15 @@ function HomePage() {
     <div className="overflow-hidden relative">
       <Header />
       {Open && (
-        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center -top-20">
-          <div className="bg-black w-full absolute h-[500vh] opacity-80 z-40 " />
+        <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center -top-28">
+          <div className="bg-black w-full absolute h-[500vh] opacity-80 z-40 " onClick={() => setOpen(!Open)} />
 
           <div className="flex justify-center items-center relative w-[63%] mt-[50px]">
             
             <img
               src="/images/cross.png"
               alt=""
-              className=" z-50 absolute right-3 top-3 w-[5%]"
+              className=" z-50 absolute right-4 top-12 w-[5%]"
               onClick={() => setOpen(!Open)}
             />
             <PopUp />
@@ -287,7 +287,7 @@ function HomePage() {
         </div>
       )}
       <div className="card-container bg-[#141414] h-[200vh] pl-[17px] sm:pl-30px lg:pl-[40px] xl:pl-[57px] pb-[50px] relative">
-        <div className="cards flex gap-x-2">
+        <div className="cards flex gap-x-1 sm:gap-x-2">
           {data.map((item, index) => (
             <Card
               Open={Open}
@@ -298,7 +298,7 @@ function HomePage() {
           ))}
         </div>
         <div className="pak-movies my-[3vw] h-[22%] sm:w-[40%]">
-          <p className="text-[19px] text-[#fff] font-[700] my-[3%]">
+          <p className="text-[12px] sm:text-[19px] text-[#fff] font-[700] sm:my-[3%]">
             Top 10 Movies in Pakistan Today
           </p>
           <div className="all-num-card flex gap-4 mt-[10px] w-[100vw]">
@@ -307,8 +307,8 @@ function HomePage() {
             ))}
           </div>
         </div>
-        <div className="continuesly-watch mt-[40px]">
-          <p className="text-[19px] text-[#fff] font-[700] my-[1%] inline-block">
+        <div className="continuesly-watch mt-0 sm:mt-[40px]">
+          <p className="text-[12px] sm:text-[19px] text-[#fff] font-[700] my-[1%] inline-block">
             Continue watching for 5
           </p>
           <div className="cards flex gap-x-2">
@@ -322,8 +322,8 @@ function HomePage() {
           {/* <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
             Top 10 Movies in Pakistan Today
           </p> */}
-          <div className="pak-movies h-[22%] sm:w-[40%] my-[3vh]">
-            <p className="text-[19px] text-[#fff] mb-[10px] font-[700] my-[3%] inline-block">
+          <div className="pak-movies h-[22%] sm:w-[40%] sm:my-[3vh]">
+            <p className="text-[12px] sm:text-[19px] text-[#fff] mb-[10px] font-[700] my-[3%] inline-block">
               Top 10 Movies in Pakistan Today
             </p>
             <div className="all-num-card flex gap-x-4 mt-[10px] w-[100vw]">
@@ -335,10 +335,10 @@ function HomePage() {
         </div>
 
         <div className="card-all">
-          <p className="text-[19px] text-[#fff] mb-[10px] font-[700] my-[1%] inline-block">
+          <p className="text-[12px] sm:text-[19px] text-[#fff] mb-[10px] font-[700] my-[1%] inline-block">
             Top 10 Movies in Pakistan Today
           </p>
-          <div className="cards flex gap-x-2 overflow- ">
+          <div className="cards flex gap-x-1 sm:gap-x-2 overflow- ">
             {data.map((item, index) => (
               <Card item={item} key={Math.random()} Open={Open} setOpen={setOpen} />
             ))}

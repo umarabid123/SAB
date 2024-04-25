@@ -6,8 +6,8 @@ const WatchPage = () => {
 
 
     return (
-        <div className="w-[100%] h-[100vh] bg-black flex flex-col items-center justify-center">
-  <video className="w-[90%] h-[90vh] rounded-[4px] border-none outline-none" controls autoPlay muted>
+        <div className="w-[100%] h-full bg-black flex flex-col items-center justify-center">
+  <video className="w-[90%] h-[100vh] rounded-[4px] border-none outline-none" controls autoPlay muted>
   onClick={e => { router.push("/watch") }}
 <source src="/images/video.mp4"></source>
           </video>
