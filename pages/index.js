@@ -292,8 +292,8 @@ function HomePage() {
             />
           ))}
         </div>
-        <div className="pak-movies my-[3vw] h-[22%] sm:w-[40%]">
-          <p className="text-[12px] sm:text-[19px] text-[#fff] font-[700] sm:my-[3%]">
+        <div className="pak-movies my-[3vw] h-[20%] xl:h-[17%] sm:w-[40%]">
+          <p className="text-[12px] lg:text-[15px] xl:text-[21px] font-[500] text-[#fff] sm:my-[3%]">
             Top 10 Movies in Pakistan Today
           </p>
           <div className="all-num-card flex gap-4 2xl:gap-1 mt-[10px] w-[100vw]">
@@ -302,8 +302,8 @@ function HomePage() {
             ))}
           </div>
         </div>
-        <div className="continuesly-watch mt-0 sm:mt-[40px]">
-          <p className="text-[12px] sm:text-[19px] text-[#fff] font-[700] my-[1%] inline-block">
+        <div className="continuesly-watch mt-0">
+          <p className="text-[12px] lg:text-[15px] xl:text-[21px] font-[500] text-[#fff] my-[1%] inline-block">
             Continue watching for 5
           </p>
           <div className="cards flex gap-x-2">
@@ -317,8 +317,8 @@ function HomePage() {
           {/* <p className="text-[16px] text-[#fff] mb-[10px] font-[700] my-[0.4%] mx-[3rem] inline-block">
             Top 10 Movies in Pakistan Today
           </p> */}
-          <div className="pak-movies h-[22%] sm:w-[40%] sm:my-[3vh]">
-            <p className="text-[12px] sm:text-[19px] text-[#fff] mb-[10px] font-[700] my-[3%] inline-block">
+          <div className="pak-movies h-[20%] xl:h-[16%]  sm:w-[40%] sm:my-[3vh]">
+            <p className="text-[12px] lg:text-[15px] xl:text-[21px] font-[500] text-[#fff] mb-[10px] my-[3%] inline-block">
               Top 10 Movies in Pakistan Today
             </p>
             <div className="all-num-card flex gap-x-4 mt-[10px] w-[100vw]">
@@ -330,7 +330,7 @@ function HomePage() {
         </div>
 
         <div className="card-all">
-          <p className="text-[12px] sm:text-[19px] text-[#fff] mb-[10px] font-[700] my-[1%] inline-block">
+          <p className="text-[12px] lg:text-[15px] xl:text-[21px] font-[500] text-[#fff] mb-[10px] my-[1%] inline-block">
             Top 10 Movies in Pakistan Today
           </p>
           <div className="cards flex gap-x-1 sm:gap-x-2 overflow- ">

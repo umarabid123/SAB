@@ -77,7 +77,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="flex flex-wrap gap-32">
+                    <div className="flex flex-wrap gap-[7.5rem] sm:gap-[8]">
                         <div className="footer-txt">
                             <ul className="text-gray-400 text-[13px] leading-8">
                                 <li className="cursor-pointer hover:underline">Gift Cards</li>

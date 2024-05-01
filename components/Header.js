@@ -52,7 +52,7 @@ const Header = () => {
                   <div className="mini-2 ml-[7px]"></div>
                 </div>
               </div>
-              <div className="nav-item-2 flex items-center gap-4 sm:gap-6 justify-end p-5 relative w-[40%]">
+              <div className="nav-item-2 flex items-center gap-1 sm:gap-6 justify-end sm:p-5 relative w-[40%]">
                 <div className="input flex items-center">
                  {ShowInput && <input
                     type="search"
@@ -121,7 +121,7 @@ const Header = () => {
                   and selling crystal meth.
                 </p>
                 <div className="btn flex items-center gap-2">
-                  <button className="bg-[#fff]  sm:w-[40%] lg:w-[30%] xl:w-[22%] h-[10px] sm:h-[40px] rounded-[4px] flex items-center gap-1 sm:gap-2 py-[12px] pr-[15px] pl-[12px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px] cursor-pointer hover:opacity-80">
+                  <button className="bg-[#fff]  sm:w-[40%] lg:w-[30%] xl:w-[22%] 2xl:w-[14%] h-[10px] sm:h-[40px] 2xl:h-[50px] rounded-[4px] flex items-center gap-1 sm:gap-2 py-[12px] pr-[15px] pl-[12px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px] cursor-pointer hover:opacity-80">
                     <svg
                       width="20%"
                       height="24"
@@ -141,7 +141,7 @@ const Header = () => {
                       Play
                     </p>
                   </button>
-                  <button className="bg-black w-[100%] lg:w-[42%] xl:w-[32%] h-[10px] sm:h-[40px] rounded-[4px] flex items-center justify-center gap-2 py-[12px] pr-[6px] pl-[6px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px] cursor-pointer hover:opacity-80">
+                  <button className="bg-black w-[100%] lg:w-[42%] xl:w-[32%] 2xl:w-[20%] h-[10px] sm:h-[40px] 2xl:h-[50px] rounded-[4px] flex items-center justify-center gap-2 py-[12px] pr-[6px] pl-[6px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px] cursor-pointer hover:opacity-80">
                     <svg
                       width="15%"
                       height="24"
@@ -164,9 +164,9 @@ const Header = () => {
                     </p>
                   </button>
                 </div>
-                <div className="text-[14px] font-[500] mt-[110px] sm:mt-[180px] lg:mt-[120px]  text-[#fff]">
+                {/* <div className="text-[14px] font-[500] mt-[110px] sm:mt-[180px] lg:mt-[120px]  text-[#fff]">
                   <p>Violent Action Movies</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
