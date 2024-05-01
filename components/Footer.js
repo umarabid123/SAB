@@ -5,7 +5,8 @@
 const Footer = () => {
     return (
         <footer>
-            <div className="footer bg-[#141414] px-[4%] ">
+            <div className="footer bg-[#141414] px-[4%] mx-auto sm:flex sm:flex-col sm:items-center sm:justify-center">
+               <div> 
                 <div className="logo flex gap-6 items-center sm:pt-[80px]">
                     <svg
                         width="24"
@@ -13,7 +14,7 @@ const Footer = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="svg-icon svg-icon-facebook-logo ltr-4z3qvp e1svuwfo1"
+                        className="svg-icon svg-icon-facebook-logo ltr-4z3qvp  cursor-pointer"
                         data-name="Facebook"
                         aria-hidden="true"
                     >
@@ -30,7 +31,7 @@ const Footer = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="svg-icon svg-icon-instagram-logo ltr-4z3qvp e1svuwfo1"
+                        className="svg-icon svg-icon-instagram-logo ltr-4z3qvp  cursor-pointer"
                         data-name="Instagram"
                         aria-hidden="true"
                     >
@@ -47,7 +48,7 @@ const Footer = () => {
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="svg-icon svg-icon-youtube-logo ltr-4z3qvp e1svuwfo1"
+                        className="svg-icon svg-icon-youtube-logo ltr-4z3qvp e1svuwfo1 cursor-pointer"
                         data-name="Youtube"
                         aria-hidden="true"
                     >
@@ -63,40 +64,42 @@ const Footer = () => {
                     <div className="flex flex-wrap gap-[150px]">
                         <div className="footer-txt">
                             <ul className="text-gray-400 text-[13px] leading-8">
-                                <li>Audio Description</li>
-                                <li>Investor Relation</li>
-                                <li>Legal Notices</li>
+                                <li className="cursor-pointer hover:underline">Audio Description</li>
+                                <li className="cursor-pointer hover:underline">Investor Relation</li>
+                                <li className="cursor-pointer hover:underline">Legal Notices</li>
                             </ul>
                         </div>
                         <div className="footer-txt">
                             <ul className="text-gray-400 text-[13px] leading-8">
-                                <li>Help Center</li>
-                                <li>Jobs</li>
-                                <li>Cookie Preferences</li>
+                                <li className="cursor-pointer hover:underline">Help Center</li>
+                                <li className="cursor-pointer hover:underline">Jobs</li>
+                                <li className="cursor-pointer hover:underline">Cookie Preferences</li>
                             </ul>
                         </div>
                     </div>
                     <div className="flex flex-wrap gap-32">
                         <div className="footer-txt">
                             <ul className="text-gray-400 text-[13px] leading-8">
-                                <li>Gift Cards</li>
-                                <li>Terms of Use</li>
-                                <li>Corporate Information</li>
+                                <li className="cursor-pointer hover:underline">Gift Cards</li>
+                                <li className="cursor-pointer hover:underline">Terms of Use</li>
+                                <li className="cursor-pointer hover:underline">Corporate Information</li>
                             </ul>
                         </div>
                         <div className="footer-txt">
                             <ul className="text-gray-400 text-[13px] leading-8">
-                                <li>Media Center</li>
-                                <li>Privacy</li>
-                                <li>Contact Us</li>
+                                <li className="cursor-pointer hover:underline">Media Center</li>
+                                <li className="cursor-pointer hover:underline">Privacy</li>
+                                <li className="cursor-pointer hover:underline">Contact Us</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className="btn">
-                    <button className="bg-transparent text-gray-400 text-[13px] font-[400] py-[4px] px-[12px] border-[1px] border-gray-400">Services Code</button>
-                    <p className="text-gray-400 text-[13px]">© 1997-2024 Netflix, Inc.</p>
+                    <button className="bg-transparent text-gray-400 text-[13px] font-[400] py-[4px] px-[12px] border-[1px] border-gray-400 cursor-pointer hover:text-white">Services Code</button>
+                    <p className="text-gray-400 text-[13px] cursor-pointer hover:underline">© 1997-2024 Netflix, Inc.</p>
                 </div>
+                </div>
+               
             </div>
         </footer>
     );

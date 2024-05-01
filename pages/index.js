@@ -274,14 +274,9 @@ function HomePage() {
         <div className="bottom-txt-3 absolute h-[100%] w-full flex flex-col items-center justify-center -top-28">
           <div className="bg-black w-full absolute h-[500vh] opacity-80 z-40 " onClick={() => setOpen(!Open)} />
 
-          <div className="flex justify-center items-center relative w-[63%] mt-[50px]">
+          <div className="flex justify-center items-center relative w-[60%] mt-[60px]">
             
-            <img
-              src="/images/cross.png"
-              alt=""
-              className=" z-50 absolute right-4 top-12 w-[5%]"
-              onClick={() => setOpen(!Open)}
-            />
+           
             <PopUp />
           </div>
         </div>
@@ -301,7 +296,7 @@ function HomePage() {
           <p className="text-[12px] sm:text-[19px] text-[#fff] font-[700] sm:my-[3%]">
             Top 10 Movies in Pakistan Today
           </p>
-          <div className="all-num-card flex gap-4 mt-[10px] w-[100vw]">
+          <div className="all-num-card flex gap-4 2xl:gap-1 mt-[10px] w-[100vw]">
             {svgCard.map((items, index) => (
               <SvgCard items={items} key={Math.random()} />
             ))}

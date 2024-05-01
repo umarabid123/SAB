@@ -4,7 +4,7 @@ const CardPopup = ({popup}) =>{
     return(
         <>
         <div className={
-          " flex flex-col w-[32%] group relative box-border p-0 m-0"
+          " flex flex-col w-[30%] group relative box-border p-0 m-0"
         }
       >
         <div className=".img-s relative w-[100%] rounded-t-sm">

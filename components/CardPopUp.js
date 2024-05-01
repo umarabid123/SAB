@@ -46,11 +46,18 @@ const PopUp = (Pop) => {
     <>
       <div className="flex flex-col z-40 w-[100%] h-[100%]">
         <div className=".img-s relative w-[100%] z-40">
+        <img
+              src="/images/cross.png"
+              alt=""
+              className=" z-50 absolute right-4  top-14 2xl:top-16 w-[5%]"
+              onClick={() => setOpen(!Open)}
+            />
           <video
             autoPlay
             loop
             controls = {false}
-            className="relative h-[90vh] bg-cover bg-center -mb-[38px]"
+            muted
+            className="relative h-[90vh] bg-cover bg-center -mb-[54px]"
           >
             <source src="/images/ForBiggerBlazes.mp4" />
             <div className="icon-btn top-0 left-14  z-50 flex justify-between items-end w-[85%]">
@@ -294,7 +301,7 @@ const PopUp = (Pop) => {
             <h3 class="text-[24px] font-bold mt-12 mb-5 text-white">
               More Like This
             </h3>
-            <div className="popupcards flex flex-wrap gap-4">
+            <div className="popupcards flex justify-center flex-wrap gap-4">
               {POPUPDATA.map((popup, index) => (
                 <CardPopup popup={popup} key={Math.random()} />
               ))}
