@@ -1,178 +1,117 @@
-import { useState } from "react";
-import Hover from "./HoverCard";
-import Login from "./HoverLogin";
-
 const Header = () => {
-  const [ShowInput, setShowInput] = useState(false);
   return (
-    <div className="m-0 p-0 box-border max-w-[100%] overflow-hidden">
-      <header>
-        <div className="bg-hero-pattern w-[100%] sm:w-[100%] h-[60vh] sm:h-[100vh] overflow-hidden max-w-[100%] bg-no-repeat bg-cover bg-center">
-          <div className="bg-primary bg-cover w-[100%] h-[60vh] sm:h-[100vh]">
-            <div className="nav bg-[#141414] h-[41px] xl:h-[68px] px-[17px] sm:px-[31px] lg:px-[40px] xl:px-[57px] flex justify-between items-center fixed z-30 w-[100vw]">
-              <div className="nav-item1 flex gap-4 lg:gap-10">
-                <svg
-                  viewBox="0 0 111 30"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  aria-hidden="true"
-                  role="img"
-                  className="fill-[rgb(229,9,20)] w-[20%] sm:w-[18%] lg:w-[10%] cursor-pointer"
-                >
-                  <g>
-                    <path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z"></path>
-                  </g>
-                </svg>
-                <div className="manu hidden lg:block">
-                  <ul className="flex items-center gap-4 text-[11px] xl:text-[14px] font-[500] text-[#fff]">
-                    <li className="cursor-pointer hover:opacity-[0.8]">Home</li>
-                    <li className="cursor-pointer hover:opacity-[0.8]">
-                      TV Shows
-                    </li>
-                    <li className=" cursor-pointer hover:opacity-[0.8]">
-                      Movies
-                    </li>
-                    <li className="cursor-pointer hover:opacity-[0.8]">
-                      New & Popular
-                    </li>
-                    <li className="cursor-pointer hover:opacity-[0.8]">
-                      My List
-                    </li>
-                    <li className="cursor-pointer hover:opacity-[0.8]">
-                      Browse by Language
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="mn-2 flex items-center h-[41px] lg:hidden">
-                  <a href="" className=" text-[#fff] font-[700] text-[12px]">
-                    Browse
-                  </a>
-                  <div className="mini-2 ml-[7px]"></div>
-                </div>
-              </div>
-              <div className="nav-item-2 flex items-center gap-1 sm:gap-6 justify-end sm:p-5 relative w-[40%]">
-                <div className="input flex items-center">
-                 {ShowInput && <input
-                    type="search"
-                    className="w-[60%] bg-black opacity-35 p-1 border-2 border-white absolute right-52"
-                  />}
-                  <svg
-                    width="36"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-name="MagnifyingGlass"
-                    aria-hidden="true"
-                    className="cursor-pointer"
-                    onClick={()=> setShowInput(!ShowInput)}
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.6177 17.0319C14.078 18.2635 12.125 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 12.125 18.2635 14.078 17.0319 15.6177L22.7071 21.2929L21.2929 22.7071L15.6177 17.0319Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                </div>
-                <div className="hovershow group">
-                  <svg
-                    width="36"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    data-name="Bell"
-                    aria-hidden="true"
-                    className="cursor-pointer sm:w-30"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M13.0002 4.07092C16.3924 4.55624 19 7.4736 19 11V15.2538C20.0489 15.3307 21.0851 15.4245 22.1072 15.5347L21.8928 17.5232C18.7222 17.1813 15.4092 17 12 17C8.59081 17 5.27788 17.1813 2.10723 17.5232L1.89282 15.5347C2.91498 15.4245 3.95119 15.3307 5.00003 15.2538V11C5.00003 7.47345 7.60784 4.55599 11.0002 4.07086V2H13.0002V4.07092ZM17 15.1287V11C17 8.23858 14.7614 6 12 6C9.2386 6 7.00003 8.23858 7.00003 11V15.1287C8.64066 15.0437 10.3091 15 12 15C13.691 15 15.3594 15.0437 17 15.1287ZM8.62593 19.3712C8.66235 20.5173 10.1512 22 11.9996 22C13.848 22 15.3368 20.5173 15.3732 19.3712C15.3803 19.1489 15.1758 19 14.9533 19H9.0458C8.82333 19 8.61886 19.1489 8.62593 19.3712Z"
-                      fill="white"
-                    ></path>
-                  </svg>
-                  <div className="hover absolute top-12 right-24 w-[100%] hidden group-hover:block group-hover:transition-all group-hover:duration-500 group-hover:ease-linear">
-                    <Hover />
-                  </div>
-                </div>
-                <div className=" flex items-center gap-3 group">
-                  <img
-                    src="/images/loading.png"
-                    alt=""
-                    className="hover:cursor-pointer"
-                  />
-                  <div className="border-arrow hidden sm:block border-solid border-[1px] w-[10%] border-[#fff] rounded-full hover:cursor-pointer group-hover:rotate-180 transition-all duration-200 ease-linear"></div>
-                  <div className="hover absolute w-[40%] top-14 right-0 hidden group-hover:block">
-                    <Login />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="relative top-[13%] sm:top-[20%]">
-              <div className="text w-[36%] flex flex-col gap-2 sm:gap-6 absolute left-[4%] top-[50%]">
-                <img src="/images/text.webp" alt="" />
-                <p className=" text-[5px] sm:text-[10px] lg:text-[13px] xl:text-[16px] text-[#fff] font-[500]">
-                  A high school chemistry teacher dying of cancer teams with a
-                  former student to secure his family's future by manufacturing
-                  and selling crystal meth.
-                </p>
-                <div className="btn flex items-center gap-2">
-                  <button className="bg-[#fff]  sm:w-[40%] lg:w-[30%] xl:w-[22%] 2xl:w-[14%] h-[10px] sm:h-[40px] 2xl:h-[50px] rounded-[4px] flex items-center gap-1 sm:gap-2 py-[12px] pr-[15px] pl-[12px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px] cursor-pointer hover:opacity-80">
-                    <svg
-                      width="20%"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      data-name="Play"
-                      aria-hidden="true"
-                      className="w-[10px] sm:w-24"
-                    >
-                      <path
-                        d="M5 2.69127C5 1.93067 5.81547 1.44851 6.48192 1.81506L23.4069 11.1238C24.0977 11.5037 24.0977 12.4963 23.4069 12.8762L6.48192 22.1849C5.81546 22.5515 5 22.0693 5 21.3087V2.69127Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                    <p className="text-[8px] sm:text-[16px] font-[500]">
-                      Play
-                    </p>
-                  </button>
-                  <button className="bg-black w-[100%] lg:w-[42%] xl:w-[32%] 2xl:w-[20%] h-[10px] sm:h-[40px] 2xl:h-[50px] rounded-[4px] flex items-center justify-center gap-2 py-[12px] pr-[6px] pl-[6px] sm:py-[9px] sm:pr-[26px] sm:pl-[22px] cursor-pointer hover:opacity-80">
-                    <svg
-                      width="15%"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w  "
-                      data-name="CircleI "
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z"
-                        fill="white"
-                      ></path>
-                    </svg>
-                    <p className="text-[8px] sm:text-[16px] text-[#fff] font-[500]">
-                      More Info
-                    </p>
-                  </button>
-                </div>
-                {/* <div className="text-[14px] font-[500] mt-[110px] sm:mt-[180px] lg:mt-[120px]  text-[#fff]">
-                  <p>Violent Action Movies</p>
-                </div> */}
-              </div>
-            </div>
+    <>
+      <nav className="flex justify-between items-center min-h-16 box-border max-w-[1200px] mx-auto">
+        <div className="nav-item flex items-center gap-4 w-[50%]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="32"
+            viewBox="0 0 36 32"
+            fill="none"
+            className=""
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M30.343 21.976a1 1 0 00.502-.864l.018-5.787a1 1 0 01.502-.864l3.137-1.802a1 1 0 011.498.867v10.521a1 1 0 01-.502.867l-11.839 6.8a1 1 0 01-.994.001l-9.291-5.314a1 1 0 01-.504-.868v-5.305c0-.006.007-.01.013-.007.005.003.012 0 .012-.007v-.006c0-.004.002-.008.006-.01l7.652-4.396c.007-.004.004-.015-.004-.015a.008.008 0 01-.008-.008l.015-5.201a1 1 0 00-1.5-.87l-5.687 3.277a1 1 0 01-.998 0L6.666 9.7a1 1 0 00-1.499.866v9.4a1 1 0 01-1.496.869l-3.166-1.81a1 1 0 01-.504-.87l.028-16.43A1 1 0 011.527.86l10.845 6.229a1 1 0 00.996 0L24.21.86a1 1 0 011.498.868v16.434a1 1 0 01-.501.867l-5.678 3.27a1 1 0 00.004 1.735l3.132 1.783a1 1 0 00.993-.002l6.685-3.839zM31 7.234a1 1 0 001.514.857l3-1.8A1 1 0 0036 5.434V1.766A1 1 0 0034.486.91l-3 1.8a1 1 0 00-.486.857v3.668z"
+              fill="#007FFF"
+            ></path>
+          </svg>
+          <div className="nav-txt">
+            <ul className="text-[#303741] text-md font-semibold py-[8px] hidden lg:flex">
+              <li className="cursor-pointer hover:bg-[#f7f8f9] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Product</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Doc</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Pricing</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">About us</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Blog</li>
+            </ul>
           </div>
         </div>
-      </header>
-    </div>
+        <div className="nav-item2 w-[50%] flex justify-end items-center gap-2">
+          <div className="serach-box bg-[#f6f7f8] border border-gray-200 p-1 rounded-xl w-44  items-center h-[10%] hidden lg:flex">
+            <svg
+              className="fill-[#006bd6] w-7 pr-1"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="SearchIcon"
+            >
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path>
+            </svg>
+            <input
+              type="search"
+              placeholder="Search..."
+              className="bg-transparent w-20 outline-none"
+            />
+            <div className="txt bg-white px-1 border border-gray-300 rounded-lg">
+              <p className="text-[#303741] text-sm font-semibold">Ctrl+K</p>
+            </div>
+          </div>
+          <div className="search-mobile border border-gray-300 rounded-xl p-2 h-[10%] lg:hidden">
+            <svg
+              className="fill-[#006bd6] w-6"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="SearchIcon"
+            >
+              <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"></path>
+            </svg>
+          </div>
+
+          <div className="github border border-gray-300 rounded-xl p-2 h-[10%]">
+            <svg
+              class=" w-6 fill-[#006bd6]"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="GitHubIcon"
+            >
+              <path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"></path>
+            </svg>
+          </div>
+          <div className="Darkmode border border-gray-300 rounded-xl p-2 h-[10%]">
+            <svg
+              className="w-6 fill-[#006bd6]"
+              focusable="false"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              data-testid="DarkModeOutlinedIcon"
+            >
+              <path d="M9.37 5.51c-.18.64-.27 1.31-.27 1.99 0 4.08 3.32 7.4 7.4 7.4.68 0 1.35-.09 1.99-.27C17.45 17.19 14.93 19 12 19c-3.86 0-7-3.14-7-7 0-2.93 1.81-5.45 4.37-6.49M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1"></path>
+            </svg>
+          </div>
+          <div className="hamber border border-gray-300 rounded-xl p-2 h-[10%] lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="24"
+              viewBox="0 0 16 16"
+              fill="none"
+              className=""
+            >
+              <rect
+                x="1"
+                y="5"
+                width="14"
+                height="1.5"
+                rx="1"
+                fill="#007FFF"
+              ></rect>
+              <rect
+                x="1"
+                y="9"
+                width="14"
+                height="1.5"
+                rx="1"
+                fill="#007FFF"
+              ></rect>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
 export default Header;
