@@ -1,7 +1,7 @@
 const HomeText = () => {
   return (
-    <div className="main  lg:pl-6 xl:pl-[91px] flex overfow-hidden ">
-      <div className="left-side w-[100%] sm:w-[70%] lg:min-w-[58%] mx-auto flex flex-col items-center lg:items-start lg:mx-0 min-w-[50%] text-center lg:text-start px-4 lg:px-0 pt-10 ">
+    <div className="main  lg:pl-6 xl:pl-[91px] flex overflow-hidden ">
+      <div className="left-side w-[100%] sm:w-[70%] lg:min-w-[58%] xl:min-w-[56%] mx-auto flex flex-col items-center lg:items-start lg:mx-0 min-w-[50%] text-center lg:text-start px-4 lg:px-0 pt-10 ">
         <div className="logo flex items-center gap-2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ const HomeText = () => {
             <button className="bg-[#0073e6] text-[#fff] text-md font-semibold rounded-md flex gap-1 w-[100%] lg:w-[24%] items-center justify-center px-3 py-2">
               Get started
               <svg
-                className="w-[6%]"
+                className="w-[6%] lg:w-[20%]"
                 focusable="false"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
@@ -98,7 +98,7 @@ const HomeText = () => {
             <button className="bg-[#fff] border border-gray-300 shadow-sm text-[#000] text-md font-semibold rounded-md flex gap-1 w-[100%] lg:w-[31%] items-center justify-center px-3 py-2">
               View templates
               <svg
-                className="w-[6%]"
+                className="w-[6%] lg:w-[16%]"
                 focusable="false"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
@@ -124,7 +124,7 @@ const HomeText = () => {
           </div>
         </div>
       </div>
-      <div className="right-side bg-[#ebf5ff] p-6 intial max-w-3xl hidden lg:block">
+      <div className="right-side bg-[#ebf5ff] p-6 intial max-w-3xl hidden lg:block w-[800px]">
         <div className="bar bg-[#fff] p-4 mb-8 flex items-center w-[800px]">
           <div className="item flex items-center gap-2 w-[100%]">
             <svg
@@ -172,7 +172,7 @@ const HomeText = () => {
             <div className="w-[18%] !border-b-[1px] border-[#b6bce9]" />
           </div>
         </div>
-        <div className="main-bar flex">
+        <div className="main-bar flex gap-8">
         <div className="left-bar w-[50%]">
           <div className="card bg-white rounded-lg border border-gray-300 max-w-[370px]">
             <div className="text-item px-4 flex items-center justify-between">
@@ -216,7 +216,7 @@ const HomeText = () => {
         </div>
           <div className="right-bar w-[50%]">
           <div className="right-btn flex gap-2">
-            <button className="bg-[#0073e6] text-[#fff] text-xl font-semibold rounded-md flex gap-1 w-[100%] lg:w-[80%] items-center justify-center px-3 py-2">
+            <button className="bg-[#0073e6] text-[#fff] text-lg font-semibold rounded-md flex gap-1 lg:w-[100%] items-center justify-center px-3 py-1 h-12 outline-none">
               <svg
                 className="fill-white !w-[14%]"
                 focusable="false"
@@ -228,7 +228,7 @@ const HomeText = () => {
               </svg>
               Install library
             </button>
-            <button className="bg-[#fff] text-[#0073e6] border-[1px] border-[#0073e6] text-xl font-semibold rounded-md flex gap-1 w-[100%] lg:w-[80%] items-center justify-center px-3 py-2">
+            <button className="bg-[#fff] text-[#0073e6] border-[1px] border-[#0073e6] text-lg font-semibold rounded-md flex gap-1 w-[100%] lg:w-[100%] items-center justify-center px-3 py-1 h-12">
               <svg
                 className="fill-[#0073e6] !w-[14%]"
                 focusable="false"
