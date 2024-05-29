@@ -3,7 +3,7 @@ import Switcher4 from "./Toggle";
 
 const HomeText = () => {
   return (
-    <div className="main  lg:pl-6 xl:pl-[91px] flex overfow-hidden ">
+    <div className="main  lg:pl-6 xl:pl-[91px] flex overflow-hidden ">
       <div className="left-side w-[100%] sm:w-[70%] lg:min-w-[58%] xl:min-w-[56%] mx-auto flex flex-col items-center lg:items-start lg:mx-0 min-w-[50%] text-center lg:text-start px-4 lg:px-0 pt-10 ">
         <div className="logo flex items-center gap-2 ">
           <svg
@@ -279,7 +279,7 @@ const HomeText = () => {
           </div>
           <div className="right-bar w-[50%] flex flex-col gap-6">
             <div className="right-btn flex gap-2">
-              <button className="bg-[#0073e6] text-[#fff] text-lg font-semibold rounded-md flex gap-1 lg:w-[100%] items-center justify-center px-3 py-1 h-12 outline-none">
+              <button className="bg-[#0073e6] text-[#fff] text-md font-semibold rounded-md flex gap-1 lg:w-[100%] items-center justify-center px-3 py-1 h-12 outline-none">
                 <svg
                   className="fill-white !w-[14%]"
                   focusable="false"

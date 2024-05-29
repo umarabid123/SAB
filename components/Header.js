@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <>
-      <nav className="flex justify-between items-center min-h-16 box-border max-w-[1200px] px-4 sm:px-6  xl:px-0 lg:mx-auto">
+      <nav className="flex justify-between items-center min-h-16 box-border max-w-[1200px] px-4 sm:px-6  xl:px-6 lg:mx-auto bg-transparent">
         <div className="nav-item flex items-center gap-4 w-[50%]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
