@@ -3,7 +3,7 @@ import Switcher4 from "./Toggle";
 
 const HomeText = () => {
   return (
-    <div className="main  lg:pl-6 xl:pl-[91px] flex overflow-hidden ">
+    <div className="main  lg:pl-6 xl:pl-40 flex overflow-hidden ">
       <div className="left-side w-[100%] sm:w-[70%] lg:min-w-[58%] xl:min-w-[56%] mx-auto flex flex-col items-center lg:items-start lg:mx-0 min-w-[50%] text-center lg:text-start px-4 lg:px-0 pt-10 ">
         <div className="logo flex items-center gap-2 ">
           <svg
