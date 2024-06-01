@@ -1,12 +1,12 @@
 const Header = () => {
   return (
     <>
-      <nav className="flex justify-between items-center min-h-16 box-border max-w-[1200px] px-4 sm:px-6  xl:px-6 lg:mx-auto bg-transparent">
-        <div className="nav-item flex items-center gap-4 w-[50%]">
+      <nav className="flex justify-between items-center min-h-16 box-border max-w-[1066px] px-4 sm:px-6  xl:px-6 lg:mx-auto bg-transparent">
+        <div className="nav-item flex items-center gap-2 w-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="32"
+            width="30"
+            height="27"
             viewBox="0 0 36 32"
             fill="none"
             className=""
@@ -19,16 +19,16 @@ const Header = () => {
             ></path>
           </svg>
           <div className="nav-txt">
-            <ul className="text-[#303741] text-md font-semibold py-[8px] hidden lg:flex">
-              <li className="cursor-pointer hover:bg-[#f7f8f9] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Product</li>
-              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Doc</li>
-              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Pricing</li>
-              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">About us</li>
-              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-3 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Blog</li>
+            <ul className="text-[#303741] text-sm font-semibold py-[8px] hidden lg:flex">
+              <li className="cursor-pointer hover:bg-[#f7f8f9] rounded-xl p-2 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Product</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-2 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Doc</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-2 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Pricing</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-2 transition-all duration-100 ease-linear hover:border-[#e8eaee]">About us</li>
+              <li className="cursor-pointer hover:bg-[#f6f7f8] rounded-xl p-2 transition-all duration-100 ease-linear hover:border-[#e8eaee]">Blog</li>
             </ul>
           </div>
         </div>
-        <div className="nav-item2 w-[50%] flex justify-end items-center gap-2">
+        <div className="nav-item2 w-auto flex justify-end items-center gap-2">
           <div className="serach-box bg-[#f6f7f8] border border-gray-200 p-1 rounded-xl w-44  items-center h-[10%] hidden lg:flex">
             <svg
               className="fill-[#006bd6] w-7 pr-1"

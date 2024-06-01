@@ -18,7 +18,7 @@ const Card = () => {
             </svg>
           }
         text={"ADD ITEM"}
-        customClass={`lg:w-[20%] lg:h-12 bg-white !text-[#0073e6] text-sm`}
+        customClass={`lg:w-[25%] lg:h-12 bg-white !text-[#0073e6] text-sm`}
         />
         <Button
           svgIcon={
@@ -33,7 +33,7 @@ const Card = () => {
             </svg>
           }
         text={"ADD ITEM"}
-        customClass={`lg:w-[20%] lg:h-12 text-sm`}
+        customClass={`lg:w-[25%] lg:h-12 text-sm`}
         />
          <Button
           svgIcon={
@@ -48,7 +48,7 @@ const Card = () => {
             </svg>
           }
         text={"ADD ITEM"}
-        customClass={`lg:w-[20%] lg:h-12 bg-white !text-[#0073e6] border border-[#0073e6] text-sm`}
+        customClass={`lg:w-[25%] lg:h-12 bg-white !text-[#0073e6] border border-[#0073e6] text-sm`}
         />
       </div>
       <img src="/images/MUI-SS.png" alt="" className="w-[100%] rounded-b-md" />

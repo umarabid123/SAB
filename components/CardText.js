@@ -1,10 +1,10 @@
 import Button from "./Button";
 
 const CardText = () => {
-  return (
+return (
     <>
-      <div className="main">
-        <h2 class="text-[#0073e6] mb-2 text-sm font-bold max-w-[50%]">
+      <div className="main max-w-[50%]">
+        <h2 class="text-[#0073e6] mb-2 text-sm w-[50%] font-">
           Component library
         </h2>
         <h2 class="text-[2.7rem] font-bold">
@@ -44,6 +44,7 @@ const CardText = () => {
             }
             customClass={`bg-white border border-gray-200 lg:w-[40%] rounded-xl h-14 !justify-start !text-gray-800 gap-4 !text-sm`}
             text={"Button"}
+        
           />
           <Button
             svgIcon={

@@ -3,8 +3,8 @@ import Switcher4 from "./Toggle";
 
 const HomeText = () => {
   return (
-    <div className="main  lg:pl-6 xl:pl-40 flex overflow-hidden ">
-      <div className="left-side w-[100%] sm:w-[70%] lg:min-w-[58%] xl:min-w-[56%] mx-auto flex flex-col items-center lg:items-start lg:mx-0 min-w-[50%] text-center lg:text-start px-4 lg:px-0 pt-10 ">
+    <div className="main  lg:pl-6 xl:pl-[15rem] flex gap-10 overflow-hidden ">
+      <div className="left-side w-[100%] sm:w-[70%] lg:min-w-[58%] xl:min-w-[40%] mx-auto flex flex-col items-center lg:items-start lg:mx-0 min-w-[50%] text-center lg:text-start px-4 lg:px-0 pt-10 ">
         <div className="logo flex items-center gap-2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ const HomeText = () => {
             used in production out of the box.
           </p>
           <div className="btn flex flex-wrap items-center gap-3">
-            <button className="bg-[#0073e6] text-[#fff] text-md font-semibold rounded-md flex gap-1 w-[100%] lg:w-[24%] items-center justify-center px-3 py-2">
+            <button className="bg-[#0073e6] text-[#fff] text-sm font-semibold rounded-md flex gap-1 w-[100%] lg:w-[23%] items-center justify-center px-2 py-2">
               Get started
               <svg
                 className="w-[6%] lg:w-[20%]"
@@ -98,7 +98,7 @@ const HomeText = () => {
                 <path d="M9.29 15.88 13.17 12 9.29 8.12a.9959.9959 0 0 1 0-1.41c.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42"></path>
               </svg>
             </button>
-            <button className="bg-[#fff] border border-gray-300 shadow-sm text-[#000] text-md font-semibold rounded-md flex gap-1 w-[100%] lg:w-[31%] items-center justify-center px-3 py-2">
+            <button className="bg-[#fff] border border-gray-300 shadow-sm text-[#000] text-sm font-semibold rounded-md flex w-[100%] lg:w-[28%] items-center justify-center px-2 py-2">
               View templates
               <svg
                 className="w-[6%] lg:w-[16%]"
@@ -127,7 +127,7 @@ const HomeText = () => {
           </div>
         </div>
       </div>
-      <div className="right-side bg-[#ebf5ff] p-6 intial max-w-3xl hidden lg:block w-[800px]">
+      <div className="right-side bg-[#ebf5ff] p-6 intial max-w-7xl hidden lg:block w-[56%]">
         <div className="bar bg-[#fff] p-4 mb-8 flex items-center w-[800px]">
           <div className="item flex items-center gap-2 w-[100%]">
             <svg
@@ -221,7 +221,7 @@ const HomeText = () => {
             <Button
               svgIcon={
                 <svg
-                  class="fill-white w-[10%]"
+                  class="fill-white w-[6%]"
                   focusable="false"
                   aria-hidden="true"
                   viewBox="0 0 24 24"
@@ -230,7 +230,7 @@ const HomeText = () => {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2M9.29 16.29 5.7 12.7a.9959.9959 0 0 1 0-1.41c.39-.39 1.02-.39 1.41 0L10 14.17l6.88-6.88c.39-.39 1.02-.39 1.41 0 .39.39.39 1.02 0 1.41l-7.59 7.59c-.38.39-1.02.39-1.41 0"></path>
                 </svg>
               }
-              customClass={"gap-7 mt-6"}
+              customClass={" lg:justify-start lg:gap-4 lg:bg-[#0288d1] lg:rounded lg:text-sm lg:w-[100%] h-11 mt-6"}
               text={"Check Material UI out now!"}
             />
             <div className="btn mt-5 flex gap-5 items-center">
@@ -279,7 +279,7 @@ const HomeText = () => {
           </div>
           <div className="right-bar w-[50%] flex flex-col gap-6">
             <div className="right-btn flex gap-2">
-              <button className="bg-[#0073e6] text-[#fff] text-md font-semibold rounded-md flex gap-1 lg:w-[100%] items-center justify-center px-3 py-1 h-12 outline-none">
+              <button className="bg-[#0073e6] text-[#fff] text-sm font-semibold rounded-md flex gap-1 lg:w-[100%] items-center justify-center px-3 py-1 h-12 outline-none">
                 <svg
                   className="fill-white !w-[14%]"
                   focusable="false"
@@ -291,7 +291,7 @@ const HomeText = () => {
                 </svg>
                 Install library
               </button>
-              <button className="bg-[#fff] text-[#0073e6] border-[1px] border-[#0073e6] text-lg font-semibold rounded-md flex gap-1 w-[100%] lg:w-[100%] items-center justify-center px-3 py-1 h-12">
+              <button className="bg-[#fff] text-[#0073e6] border-[1px] border-[#0073e6] text-sm font-semibold rounded-md flex gap-1 w-[100%] lg:w-[100%] items-center justify-center px-3 py-1 h-12">
                 <svg
                   className="fill-[#0073e6] !w-[14%]"
                   focusable="false"
