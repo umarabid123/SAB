@@ -4,7 +4,7 @@ const Card = () => {
   return (
     <>
     <div className={ `main border border-[#f0f0fd] w-full lg:max-w-[50%] h-fit rounded-md bg-[#f0f0fd]`}>
-      <div className=" flex gap-10 justify-center py-10">
+      <div className=" flex flex-wrap lg:flex-nowrap gap-10 justify-center py-10">
       <Button
           svgIcon={
             <svg

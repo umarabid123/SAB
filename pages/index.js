@@ -6,7 +6,7 @@ import HomeText from "@/components/HomeText";
 const HomePage = () => {
   return (
     <>
-      <div className="main mx-auto">
+      <div className="main mx-auto max-w-[100%]">
         <Header />
         <hr />
         <HomeText />
@@ -39,7 +39,7 @@ const HomePage = () => {
           </div>
         </div>
         <hr />
-        <div className="card-items py-28 flex justify-between sm:flex-wrap sm:px-11 lg:px-6 xl:px-[15rem] bg-[#f0f8ff]">
+        <div className="card-items py-28 flex justify-between flex-wrap lg:flex-nowrap px-4 sm:px-11 lg:px-6 xl:px-[15rem] bg-[#f2f8fd]">
           <CardText />
           <Card />
         </div>
