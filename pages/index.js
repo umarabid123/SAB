@@ -11,7 +11,7 @@ const HomePage = () => {
         <hr />
         <HomeText />
         <div className="text-img py-24">
-          <div className="logo flex items-center justify-between flex-wrap lg:flex-nowrap sm:px-11 lg:px-6 xl:px-[70px]">
+          <div className="logo flex items-center justify-between flex-wrap lg:flex-nowrap sm:px-11 lg:px-6 xl:px-[15rem]">
             <div className="img w-[50%] sm:w-[30%] lg:w-[27%] flex justify-center p-6">
               <img src="/images/spotify-light.svg" alt="" className="" />
             </div>
@@ -39,7 +39,7 @@ const HomePage = () => {
           </div>
         </div>
         <hr />
-        <div className="card-items py-28 flex justify-between px-32">
+        <div className="card-items py-28 flex justify-between sm:flex-wrap sm:px-11 lg:px-6 xl:px-[15rem] bg-[#f0f8ff]">
           <CardText />
           <Card />
         </div>
