@@ -10,7 +10,7 @@ const CardText = () => {
         <h2 class="text-2xl lg:text-[2.2rem] leading-7 lg:leading-10 font-bold text-gray-900">
           <span class="text-[#0073e6]">40+</span> building block components
         </h2>
-        <p class="text-[.9rem] text-gray-800 pr-4 ">
+        <p class="text-[16px] text-gray-800 pr-4 mt-2 mb-6 ">
           A meticulous implementation of Material Design; every Material UI
           component meets the highest standards of form and function.
         </p>
@@ -27,7 +27,7 @@ const CardText = () => {
                 <path d="M22 9v6c0 1.1-.9 2-2 2h-1v-2h1V9H4v6h6v2H4c-1.1 0-2-.9-2-2V9c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2m-7.96 8.99c.18.39.73.39.91 0l.63-1.4 1.4-.63c.39-.18.39-.73 0-.91l-1.4-.63-.63-1.4c-.18-.39-.73-.39-.91 0l-.63 1.4-1.4.63c-.39.18-.39.73 0 .91l1.4.63zm2.7-4.56c.1.22.42.22.52 0l.36-.8.8-.36c.22-.1.22-.42 0-.52l-.8-.36-.36-.8c-.1-.22-.42-.22-.52 0l-.36.8-.8.36c-.22.1-.22.42 0 .52l.8.36z"></path>
               </svg>
             }
-            customClass={`bg-white border border-[#0073e6] min-w-[70%] sm:min-w-[20%] sm:min-w-[35%] ! lg:max-w-[40%] rounded-xl lg:h-12 !justify-start !text-gray-800  gap-2 lg:gap-4 !text-sm flex-col items-start h-16 lg:item-center sm:flex-row sm:p-4 !sm:items-center`}
+            customClass={`bg-white border border-[#0073e6] min-w-[70%] sm:min-w-[20%] sm:min-w-[35%] ! lg:max-w-[40%] rounded-xl lg:h-12 !justify-start !text-gray-800  gap-2 lg:gap-4 !text-sm flex-col !items-start h-16 lg:item-center sm:flex-row sm:p-4 !sm:items-center`}
             text={"Button"}
           />
           <Button
@@ -42,7 +42,7 @@ const CardText = () => {
                 <path d="M21 3.01H3c-1.1 0-2 .9-2 2V8c0 .55.45 1 1 1s1-.45 1-1V5.99c0-.55.45-1 1-1h16c.55 0 1 .45 1 1v12.03c0 .55-.45 1-1 1H4c-.55 0-1-.45-1-1V16c0-.55-.45-1-1-1s-1 .45-1 1v3.01c0 1.09.89 1.98 1.98 1.98H21c1.1 0 2-.9 2-2V5.01c0-1.1-.9-2-2-2m-9.15 12.14 2.79-2.79c.2-.2.2-.51 0-.71l-2.79-2.79c-.31-.32-.85-.1-.85.35V11H2c-.55 0-1 .45-1 1s.45 1 1 1h9v1.79c0 .45.54.67.85.36"></path>
               </svg>
             }
-            customClass={`bg-white min-w-[70%]  sm:min-w-[20%] sm:min-w-[35%] ! lg:max-w-[40%] rounded-xl lg:h-12 !justify-start !text-gray-800  gap-2 lg:gap-4 !text-sm flex-col items-start h-16 lg:items-center sm:flex-row sm:p-4`}
+            customClass={`bg-white min-w-[70%]  sm:min-w-[20%] sm:min-w-[35%] ! lg:max-w-[40%] rounded-xl lg:h-12 !justify-start !text-gray-800  gap-2 lg:gap-4 !text-sm flex-col !items-start h-16 lg:items-center sm:flex-row sm:p-4`}
             text={"Button"}
           />
           <Button
