@@ -39,7 +39,7 @@ const HomePage = () => {
           </div>
         </div>
         <hr />
-        <div className="card-items py-28 flex justify-between flex-wrap lg:flex-nowrap px-4 sm:px-11 lg:px-6 xl:px-[15rem] bg-[#f2f8fd]">
+        <div className="card-items py-28 flex justify-between lg:gap-10 flex-wrap lg:flex-nowrap px-4 sm:px-11 lg:px-6 xl:px-[15rem] bg-[#f2f8fd]">
           <CardText />
           <Card />
         </div>
