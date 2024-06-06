@@ -28,7 +28,7 @@ const CardText = () => {
               </svg>
             }
             customClass={`bg-white border border-[#0073e6] min-w-[70%] sm:min-w-[20%] sm:min-w-[35%] ! lg:max-w-[40%] rounded-xl lg:h-12 !justify-start !text-gray-800  gap-2 lg:gap-4 !text-sm flex-col !items-start h-16 lg:item-center sm:flex-row sm:p-4 !sm:items-center`}
-            text={"Button"}
+            text={"ButtOn"}
           />
           <Button
             svgIcon={
