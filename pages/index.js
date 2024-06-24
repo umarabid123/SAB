@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
 function HomePage() {
   return (
     <div className="overflow-hidden">
